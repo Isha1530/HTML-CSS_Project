@@ -1,0 +1,345 @@
+/* General Styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 30px;
+}
+
+.main-nav a {
+  font-size: 14px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #cc0000;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #4f4c4c;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+}
+
+/* Latest Projects Section */
+.latest-projects {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.latest-projects h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-item {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.project-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Bottom Sections */
+.bottom-sections {
+  background-color: #f0f0f0;
+  padding: 60px 0;
+}
+
+.bottom-sections .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about-me-section h2,
+.whats-new-section h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.about-me-section p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #555;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #cc0000;
+  color: #fff;
+  border-color: #cc0000;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.news-thumbnail img {
+  width: 100px;
+  height: 100px;
+}
+
+.news-content h3 {
+  font-size: 17px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.news-content p {
+  font-size: 13px;
+  color: #777;
+}
+
+.news-content p span {
+  color: #cc0000;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav li {
+  margin-left: 20px;
+}
+
+.footer-nav a {
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #cc0000;
+}
+
+.copyright span {
+  color: #cc0000;
+  font-weight: 600;
+}
+
+/* Responsive Mobile Menu Toggle */
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media (max-width: 475px) {
+  .mobile-header {
+    display: flex;
+    flex-wrap: wrap;              /* allow items to wrap to the next line */
+    align-items: center;          /* vertically center logo & toggle */
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  /* Show the toggle icon */
+  .menu-toggle {
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    order: 1;                      /* place toggle to the right of logo */
+  }
+
+  /* Logo stays first */
+  .logo {
+    order: 1;
+  }
+
+  /* Hide the nav by default; force it to full width on its own “row” */
+  .main-nav {
+    order: 3;                      
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+  }
+
+  /* When checkbox is checked, show the nav as a column */
+  #menu-toggle:checked + .menu-toggle + .main-nav {
+    display: flex;
+  }
+
+  /* Stack links in a column */
+  .main-nav ul {
+    display: flex;                 /* parent flex for easier column layout */
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  /* Give each <li> some horizontal padding */
+  .main-nav li {
+    margin: 10px 20px;
+  }
+
+  /* …other responsive tweaks… */
+  .bottom-sections .container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
